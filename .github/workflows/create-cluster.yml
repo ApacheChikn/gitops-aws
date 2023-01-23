@@ -21,7 +21,7 @@ jobs:
 
     - name: Install Terraform
       id: install-terraform
-      run: wget -O terraform.zip https://releases.hashicorp.com/terraform/0.15.3/terraform_0.15.3_linux_amd64.zip && unzip terraform.zip && chmod +x terraform && sudo mv terraform /usr/local/bin
+      run: wget -O terraform.zip https://releases.hashicorp.com/terraform/1.0.3/terraform_1.0.3_linux_amd64.zip && unzip terraform.zip && chmod +x terraform && sudo mv terraform /usr/local/bin
     - name: Apply Terraform
       id: apply-terraform
       run: terraform init && terraform apply -auto-approve 
