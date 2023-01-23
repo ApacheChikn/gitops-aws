@@ -26,6 +26,11 @@ terraform {
     }
   }
 
+  backend "s3" {
+    bucket = "gitops-aws-buc"
+    region = "us-east-1"
+  }
+
   required_version = "~> 1.0"
 }
 
