@@ -1,7 +1,7 @@
 variable "bucket-name" {
     description = "bucket name"
     type = string
-    default = "gitops-aws-buc"
+    default = "gitops-gumbo-buc"
   
 }
 
